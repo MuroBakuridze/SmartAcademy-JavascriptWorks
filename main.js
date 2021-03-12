@@ -2,25 +2,41 @@ console.log("Homework-12");
 
 /* 1. აიღეთ ნებისმიერი ორი რიცხვი, შეკრიბეთ და შემდეგ შეამოწმეთ, თუ ჯამი არის ლუწი მაშინ დალოგეთ "ლუწი" თუ კენტი მაშინ "კენტი". გაითვალისწინეთ, რომ რიცხვები შეიძლება იყოს უარყოფითი . */
 
-var x = -3;
-var y = 2;
+var x = -1;
+var y = -1;
 var z = x + y;
 
-if (z % 2 === 0 && z > 0) {
-  console.log("number is even");
-} else if (z % 2 === 0 && z < 0) {
-  z = z - 2 * z;
-  console.log("number is even");
+if (z % 2 === 0 && z != 0) {
+  console.log(z + " -> number is even");
 } else if (z === 0) {
   console.log(0);
 }
 else {
-  console.log("number is odd");
+  console.log(z + " -> number is odd");
 };
 
 
 
-
-
-
 /* 2. მოცემული გაქვთ სამკუთხედის ერთი გვერდი b და სიმაღლე h გამოთვალეთ სამკუთხედის ფართობი(ფორმულას არ დავაზუსტებ) b და h შეიძლება იყოს ნებისმიერი რიცხვი, აქვე გაითვალისწინეთ რომ თუ რომელიმე რიცხვი არის უარყოფითი გთხოვთ შეაბრუნოთ და გახადოთ დადებითი .*/
+
+var b = -2;
+var h = -50;
+// var s = (b + h) / 2;
+
+if (b >= 0 && h >= 0) {
+  var s = (b + h) / 2
+  console.log("Area = " + s);
+} else if (b < 0 && h > 0) {
+  b = b * -1;
+  var s = (b + h) / 2
+  console.log("Area = " + s);
+} else if (h < 0 && b > 0) {
+  h = h * -1;
+  var s = (b + h) / 2
+  console.log("Area = " + s);
+} else if (b < 0 && h < 0) {
+  b = b * -1;
+  h = h * -1;
+  var s = (b + h) / 2
+  console.log("Area = " + s);
+}
