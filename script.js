@@ -12,7 +12,7 @@ function result() {
     inputCalc.value = ''
   }if(eval(inputCalc.value) == Infinity){
     resultCalc.value = '0'
-    inputCalc.value = 'You think I\'m Stuped? :P'
+    inputCalc.value = 'You think I\'m Stupid? :P'
   }
   resultCalc.value = eval(inputCalc.value)
   inputCalc.value = eval(inputCalc.value)
