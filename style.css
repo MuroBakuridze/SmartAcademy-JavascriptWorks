@@ -1,0 +1,96 @@
+body{
+  background-image: linear-gradient(-60deg, #ff9768 0%, #9156e1 100%);
+  font-family: 'Roboto', sans-serif;
+}
+.calculator{
+  margin: 90px auto;
+  width: 380px;
+  height: 660px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+}
+.header {
+  height: 100px;
+  padding: 37px 30px 27px 29px;
+  background-color:#111850;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: right;
+}
+.account {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ca128d;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+.account::placeholder{
+  color: #D9D4DE
+}
+.result{
+  width: 100%;
+  margin-top: 18px;
+  text-align: right;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 60px;
+  color:  rgb(255, 255, 255);
+}
+.result::placeholder{
+  color: rgb(255, 255, 255);
+}
+.main {
+  height: 500px;
+  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #392b47;
+  padding: 2px;
+}
+.btn{
+  display: block;
+  align-content: center;
+  width:85px;
+  height: 85px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 22px;
+  outline: none;
+  border: none;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.btn-big{
+  width: 275px;
+  height: 85px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 22px;
+  background-color: #7831B4;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-big:hover{
+  background-color: #a653eb;
+}
+.btn:hover{
+  background-color: rgb(238, 187, 21);
+}
+.p-txt{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.back-col{
+  background-color: rgb(18, 115, 148);
+  color: white;
+}
+.back-col:hover{
+  background-color: rgb(11, 184, 236);
+}
